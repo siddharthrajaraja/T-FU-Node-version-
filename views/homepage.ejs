@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="../assets/Styles/index.css" />
+    <title>T-fu</title>
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg navbar-light fixed-top justify-content-space-between"
+    >
+      <div class="container">
+        <a class="navbar-brand">T-fu</a>
+        <button
+          class="navbar-toggler"
+          data-target="#my-nav"
+          data-toggle="collapse"
+          aria-controls="my-nav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="my-nav" class="collapse navbar-collapse">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#"
+                >Home <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Offers/Sale</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Vendors</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <button class="search-btn"><i class="fas fa-search"></i></button>
+      </div>
+    </nav>
+    <div class="banner">
+      <div
+        class="black-layer d-flexbox justify-content-left align-items-center"
+      >
+        <div class="banner-text">
+          Get Your own T-shirt Today!
+        </div>
+        <div class="start-btn-container">
+          <a href="#color" class="btn btn-outline-secondary start-btn">
+            Begin
+          </a>
+        </div>
+      </div>
+    </div>
+    <section class="color" id="color">
+      <div class="container">
+        <div class="row d-flex justify-content-center align-items-center">
+          <div class="col-md-6">
+            <div class="img-container">
+              <img
+                src=".././assets/img/t-shirts/black.jpg"
+                class="img-responsive img-color"
+                id="black-img"
+                alt=""
+              />
+              <img
+                src=".././assets/img/t-shirts/blue.jpg"
+                class="img-responsive img-color hidden"
+                id="blue-img"
+                alt=""
+              />
+              <img
+                src=".././assets/img/t-shirts/darkBlue.jpg"
+                class="img-responsive img-color hidden"
+                id="darkBlue-img"
+                alt=""
+              />
+              <img
+                src=".././assets/img/t-shirts/red.jpg"
+                class="img-responsive img-color hidden"
+                id="red-img"
+                alt=""
+              />
+              <img
+                src=".././assets/img/t-shirts/darkRed.jpg"
+                class="img-responsive img-color hidden"
+                id="darkRed-img"
+                alt=""
+              />
+              <img
+                src=".././assets/img/t-shirts/grey.jpg"
+                class="img-responsive img-color hidden"
+                id="grey-img"
+                alt=""
+              />
+              <img
+                src=".././assets/img/t-shirts/pink.jpg"
+                class="img-responsive img-color hidden"
+                id="pink-img"
+                alt=""
+              />
+            </div>
+            <div class="design-container"></div>
+          </div>
+          <div class="col-md-6 menu">
+            <div class="col-md-12 color-menu">
+              <div class="Choose-text text-dark">
+                Choose your color
+                <hr />
+              </div>
+              <div class="option">
+                <form action="">
+                  <label class="btn btn-outline-secondary clicked" for="black"
+                    >black</label
+                  >
+                  <input
+                    type="radio"
+                    value="black"
+                    name="color"
+                    id="black"
+                    checked="true"
+                  />
+                  <label class="btn btn-outline-secondary" for="blue"
+                    >blue</label
+                  >
+                  <input type="radio" value="blue" name="color" id="blue" />
+                  <label class="btn btn-outline-secondary" for="darkBlue"
+                    >darkBlue</label
+                  >
+                  <input
+                    type="radio"
+                    value="darkBlue"
+                    name="color"
+                    id="darkBlue"
+                  />
+                  <label class="btn btn-outline-secondary" for="red">red</label>
+                  <input type="radio" value="red" name="color" id="red" />
+                  <label class="btn btn-outline-secondary" for="darkRed"
+                    >darkRed</label
+                  >
+                  <input
+                    type="radio"
+                    value="darkRed"
+                    name="color"
+                    id="darkRed"
+                  />
+                  <label class="btn btn-outline-secondary" for="grey"
+                    >grey</label
+                  >
+                  <input type="radio" value="grey" name="color" id="grey" />
+                  <label class="btn btn-outline-secondary" for="pink"
+                    >pink</label
+                  >
+                  <input type="radio" value="pink" name="color" id="pink" />
+                </form>
+              </div>
+              <div class="next-btn1">
+                <button class="btn btn-info" type="button">Next</button>
+              </div>
+            </div>
+            <div class="col-md-12 design-menu hidden">
+              <div class="Choose-text text-dark">
+                Choose your Design
+                <hr />
+              </div>
+              <div class="option"></div>
+              <div class="next-btn1">
+                <button class="btn btn-primary" type="button">Next</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="../assets/Script/script-index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,123 @@
+body,
+html {
+  scroll-behavior: smooth;
+}
+
+.navbar {
+  box-shadow: 0 0 50px black;
+  background: #fff;
+}
+.search-btn {
+  background: transparent;
+  border: none;
+}
+.banner {
+  height: 100vh;
+  background: url("../img/keagan-henman-625488-unsplash.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.black-layer {
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+.banner-text,
+.start-btn-container {
+  max-width: 600px;
+  color: rgba(255, 255, 255, 0.9);
+  z-index: 2;
+  display: flex;
+  float: left;
+  justify-content: left;
+  align-items: center;
+  height: 100%;
+  margin: auto;
+  font-size: 6rem;
+}
+.start-btn-container {
+  float: right;
+  overflow: hidden;
+}
+.start-btn {
+  margin: 0 400px 0 0;
+  color: white;
+  font-size: 6rem;
+  padding: 20px 100px;
+}
+section {
+  height: 100vh;
+  box-shadow: 0 10px 10px grey;
+  background-color: #fff;
+}
+.img-color {
+  margin: 10vh auto;
+  height: 80vh;
+}
+
+.hidden {
+  display: none;
+}
+
+.Choose-text {
+  font-size: 4rem;
+  margin-top: -30vh;
+  padding: 10% 0;
+  color: black;
+}
+input[name="color"] {
+  display: none;
+}
+.option form label {
+  padding: 5%;
+  border-radius: 5%;
+  margin: 10px 10px;
+}
+
+.next-btn1 {
+  float: right;
+  position: absolute;
+  right: 10vh;
+  top: 75vh;
+}
+.next-btn1 .btn {
+  font-size: 2.5rem;
+  padding: 1vh 5vh;
+}
+.clicked {
+  background-color: grey;
+  color: white;
+}
+
+.design-menu {
+  opacity: 0;
+  top: 50vh;
+}
+
+.design-container {
+  position: absolute;
+  top: 30vh;
+  left: 32%;
+  height: 25vh;
+  width: 25vh;
+  background: url("../img/design/design3.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+@media only screen and (max-width: 600px) {
+  .start-btn-container {
+    display: none;
+  }
+  .img-color {
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .hidden {
+    display: none;
+  }
+}
